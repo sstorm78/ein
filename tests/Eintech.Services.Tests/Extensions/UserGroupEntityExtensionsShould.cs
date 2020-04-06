@@ -14,7 +14,7 @@ namespace Eintech.Services.Tests.Extensions
         {
             var expectedDate = new DateTime(2020, 1, 1, 1, 1, 1);
 
-            var entity = new Data.Entities.UserGroup
+            var entity = new UserGroup
                          {
                              Id = 3,
                              Group = new Group

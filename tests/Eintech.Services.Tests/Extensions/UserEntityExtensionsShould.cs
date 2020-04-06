@@ -14,7 +14,7 @@ namespace Eintech.Services.Tests.Extensions
         {
             var expectedDate = new DateTime(2020, 1, 1, 1, 1, 1);
 
-            var entity = new Data.Entities.User
+            var entity = new User
                          {
                              Id = 1,
                              FirstName = "a",

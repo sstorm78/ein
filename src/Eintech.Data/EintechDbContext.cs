@@ -13,7 +13,7 @@ namespace Eintech.Data
         {
             if (config == null) throw new ArgumentNullException(nameof(config));
 
-            this._connectionString = config.DbConnectionString;
+            _connectionString = config.DbConnectionString;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

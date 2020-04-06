@@ -92,7 +92,7 @@ namespace Eintech.Website.Tests.Controllers.Api
             result.Should().BeOfType<ActionResult<int>>();
             result.Result.Should().BeOfType<BadRequestObjectResult>();
 
-            var details = (Microsoft.AspNetCore.Mvc.ObjectResult) result.Result;
+            var details = (ObjectResult) result.Result;
 
             ((SerializableError)details.Value).First().Key.Should().Be("FirstName");
 
