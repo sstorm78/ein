@@ -9,7 +9,7 @@ namespace Eintech.Models.Tests
     public class UserShould
     {
         [Test]
-        public void ConstructorFirstNameLastNameGroups_shouldReturnProperlyPopulatedInstance()
+        public void ConstructorFirstNameLastNameGroups_ShouldReturnProperlyPopulatedInstance()
         {
             var result = new User("sergey","storm", new List<Group>
                                                     {
@@ -23,7 +23,7 @@ namespace Eintech.Models.Tests
         }
 
         [Test]
-        public void ConstructorIdFirstNameLastNameDateAddedGroups_shouldReturnProperlyPopulatedInstance()
+        public void ConstructorIdFirstNameLastNameDateAddedGroups_ShouldReturnProperlyPopulatedInstance()
         {
             var expectedDate = new DateTime(2020, 1, 1, 1, 1, 1);
 

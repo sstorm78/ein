@@ -15,7 +15,7 @@ namespace Eintech.Services.Tests
     public class UserServiceShould
     {
         [Test]
-        public async Task Create_shouldCallRepositoryCreateOnce()
+        public async Task Create_ShouldCallRepositoryCreateOnce()
         {
             var userRepositoryMock = new Mock<IUserRepository>();
             var userGroupServiceMock = new Mock<IUserGroupService>();
@@ -33,7 +33,7 @@ namespace Eintech.Services.Tests
         }
 
         [Test]
-        public async Task Create_shouldCallUserGroupServiceAssociateUserToGroupTwice()
+        public async Task Create_ShouldCallUserGroupServiceAssociateUserToGroupTwice()
         {
             var userRepositoryMock = new Mock<IUserRepository>();
             var userGroupServiceMock = new Mock<IUserGroupService>();
@@ -55,7 +55,7 @@ namespace Eintech.Services.Tests
         }
 
         [Test]
-        public async Task Search_shouldReturnAListOfTwoUsers()
+        public async Task Search_ShouldReturnAListOfTwoUsers()
         {
             var userRepositoryMock = new Mock<IUserRepository>();
             var userGroupServiceMock = new Mock<IUserGroupService>();

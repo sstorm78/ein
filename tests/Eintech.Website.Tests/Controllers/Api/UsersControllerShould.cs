@@ -26,7 +26,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Create_shouldReturnCreatedStatus()
+        public async Task Create_ShouldReturnCreatedStatus()
         {
             _userServiceMock.Setup(i => i.Create(It.IsAny<Models.User>())).ReturnsAsync(1);
 
@@ -49,7 +49,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Create_shouldReturnInternalServerErrorWhenAnExceptionOccured()
+        public async Task Create_ShouldReturnInternalServerErrorWhenAnExceptionOccured()
         {
             _userServiceMock.Setup(i => i.Create(It.IsAny<Models.User>())).ThrowsAsync(new Exception());
 
@@ -71,7 +71,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Create_shouldReturnBadRequestWhenARequiredParamIsMissing()
+        public async Task Create_ShouldReturnBadRequestWhenARequiredParamIsMissing()
         {
             _userServiceMock.Setup(i => i.Create(It.IsAny<Models.User>())).ReturnsAsync(1);
 
@@ -102,7 +102,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Search_shouldReturnTwoUsers()
+        public async Task Search_ShouldReturnTwoUsers()
         {
             var expectedResult = new List<Models.User>();
             expectedResult.Add(new Models.User("a","b",new List<Models.Group>()));
@@ -121,7 +121,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Search_shouldReturnInternalServerErrorWhenAnExceptionOccured()
+        public async Task Search_ShouldReturnInternalServerErrorWhenAnExceptionOccured()
         {
             _userServiceMock.Setup(i => i.Search(It.IsAny<string>())).ThrowsAsync(new Exception());
 
@@ -133,7 +133,7 @@ namespace Eintech.Website.Tests.Controllers.Api
         }
 
         [Test]
-        public async Task Search_shouldReturnBadRequestWhenNoKeyWordWasProvided()
+        public async Task Search_ShouldReturnBadRequestWhenNoKeyWordWasProvided()
         {
             _userServiceMock.Setup(i => i.Search(It.IsAny<string>())).ThrowsAsync(new Exception());
 

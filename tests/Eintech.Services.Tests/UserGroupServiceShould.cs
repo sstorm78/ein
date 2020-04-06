@@ -9,7 +9,7 @@ namespace Eintech.Services.Tests
     public class UserGroupServiceShould
     {
         [Test]
-        public void AssociateUserToGroup_shouldCallRepositoryCreateOnce()
+        public void AssociateUserToGroup_ShouldCallRepositoryCreateOnce()
         {
             var userGroupRepositoryMock = new Mock<IUserGroupRepository>();
 

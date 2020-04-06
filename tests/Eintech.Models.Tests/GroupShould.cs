@@ -9,7 +9,7 @@ namespace Tests
     public class Tests
     {
         [Test]
-        public void ConstructorIdName_shouldReturnProperlyPopulatedInstance()
+        public void ConstructorIdName_ShouldReturnProperlyPopulatedInstance()
         {
             var result = new Group(1, "storm");
 
@@ -18,7 +18,7 @@ namespace Tests
         }
 
         [Test]
-        public void ConstructorIdNameDateAdded_shouldReturnProperlyPopulatedInstance()
+        public void ConstructorIdNameDateAdded_ShouldReturnProperlyPopulatedInstance()
         {
             var expectedDate = new DateTime(2020, 1, 1, 1, 1, 1);
 

@@ -19,7 +19,7 @@ namespace Eintech.Models.Tests
         }
 
         [Test]
-        public void DbConnectionString_shouldReturnExpectedConnectionString()
+        public void DbConnectionString_ShouldReturnExpectedConnectionString()
         {
             var config = new Config(_configurationRootMock.Object);
 
