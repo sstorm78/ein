@@ -1,19 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Eintech.Services;
 using Eintech.Website.Controllers.Api;
 using Eintech.Website.UiModels;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Moq;
-using Newtonsoft.Json;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 
 namespace Eintech.Website.Tests.Controllers.Api
 {

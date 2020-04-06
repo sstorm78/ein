@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Eintech.Data.Entities;
+﻿using System.Collections.Generic;
 using Eintech.Services.Extensions;
 using FluentAssertions;
 using NUnit.Framework;

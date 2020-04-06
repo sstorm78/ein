@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Castle.Components.DictionaryAdapter;
 using Eintech.Data;
 using Eintech.Data.Entities;
 using FluentAssertions;

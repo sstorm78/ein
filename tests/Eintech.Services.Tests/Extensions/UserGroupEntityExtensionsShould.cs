@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Eintech.Data.Entities;
 using Eintech.Services.Extensions;
 using FluentAssertions;
