@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Add User";
+    Layout = "~/Views/_layout.cshtml";
+}
+
+@section scripts{
+    <script src="/scripts/Pages/Users/add.js"></script>
+}
+
+
+@section JsPageOnLoad
+{
+    app.Pages.Users.Add.OnPageLoad();
+}
+
+
+<h1>New User</h1>
+
+
+<div class="ui form">
+
+    <div class="row">
+        <div class="label">First Name:</div>
+        <div class="ui input">
+            <input type="text" id="txt-first-name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="label">Last Name:</div>
+        <div class="ui input">
+            <input type="text" id="txt-last-name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="label">Group:</div>
+        <div>
+            <select id="ddl-group" class="ui dropdown">
+                <option value="">Select a group</option>
+                <option value="2">Administrators</option>
+                <option value="4">Moderators</option>
+                <option value="5">Editors</option>
+                <option value="6">Publishers</option>
+                <option value="7">Read-Only Users</option>
+            </select>
+        </div>
+    </div>
+    <div class="controls">
+        <button class="ui button large orange" id="btn-create">Create</button>
+    </div>
+</div>

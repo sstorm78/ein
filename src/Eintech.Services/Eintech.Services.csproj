@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eintech.Data\Eintech.Data.csproj" />
+    <ProjectReference Include="..\Eintech.Models\Eintech.Models.csproj" />
+  </ItemGroup>
+
+</Project>

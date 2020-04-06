@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/_layout.cshtml";
+}
+
+@section scripts{
+    <script src="/scripts/Pages/Users/index.js"></script>
+}
+
+@section JsPageOnLoad
+    {
+    app.Pages.Users.Index.OnPageLoad();
+}
+
+<div class="float-left">
+    <h1>Users Search</h1>
+</div>
+<div class="float-right">
+    <button class="ui button large orange fluid" id="btn-add-user">Add User</button>
+</div>
+<div class="t"></div>
+
+<div id="div-users"></div>

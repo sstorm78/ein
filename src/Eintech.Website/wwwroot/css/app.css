@@ -1,0 +1,147 @@
+﻿
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Sans-Serif;
+    color: #37474f;
+    MARGIN: 0;
+    PADDING: 0;
+    font-size: 1.3em;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #f3f5f7;
+}
+
+.content {
+    width: 90%;
+    display: table;
+    height: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+h1{
+    margin-bottom:50px;
+}
+
+.marginBottom50 {
+    margin-bottom: 50px;
+}
+
+.layer-loader {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.footer {
+    position: relative;
+    margin-top: -70px; /* negative value of footer height */
+    height: 70px;
+    clear: both;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    font-weight: bold;
+    font-size: smaller;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    height: 100px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    background:black;
+}
+
+.logo{
+    float:left;
+    margin-left:30px;
+    width:200px;
+}
+
+.logo img{
+    width:200px;
+}
+
+.search{
+    float:right;
+    margin-right:30px;
+}
+
+.search .input{
+    float:left;
+    width:200px;
+}
+
+.search input{
+    width:200px;
+}
+
+.search .button{
+    float:left;
+    margin-left:10px;
+}
+
+.t {
+    clear: both;
+}
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+.form {
+    width: 400px;
+}
+
+.form .row {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.form .input {
+    clear: both;
+    margin-top: 5px;
+    text-shadow: none !important;
+    width: 100%;
+}
+
+.form .controls{
+    margin-top:50px;
+}
+
+#div-users{
+    margin-top:50px;
+}
+
+.user-list-row{
+    clear:both;
+    margin-bottom:30px;
+}
+
+.user-list-row .name{
+    font-size:26px;
+    margin-bottom:5px;
+}
+
+user-list-row .memberof{
+    clear:both;
+    color: grey;
+    font-size:smaller;
+}

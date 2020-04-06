@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Eintech Test";
+    Layout = "~/Views/_layout.cshtml";
+}
+
+@section scripts{
+    <script src="/scripts/Pages/index.js"></script>
+}
+
+
+@section JsPageOnLoad
+    {
+    index.OnPageLoad();
+}
+
+<div class="float-left">
+    <h1>Welcome to Eintech Test</h1>
+</div>
+<div class="float-right">
+    <button class="ui button large orange fluid" id="btn-add-user">Add User</button>
+</div>
+<div class="t marginBottom50"></div>
+
+<p>
+    The provided DB already has 5 user groups and some test users. You can test the search by typing a name such as 'sam' or a group name like 'moderators' and clicking ENTER or the search button. You will be redirected to a search results page.
+
+</p>
+<p>
+    The  Add User button will take you to a basic user creation form, which you can use to test the creation functionality.
+</p>
+
+<p>
+    Sergey Storm
+</p>
